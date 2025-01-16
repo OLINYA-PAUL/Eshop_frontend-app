@@ -11,8 +11,6 @@ import socketIO from "socket.io-client";
 import { format } from "timeago.js";
 const ENDPOINT = "https://web-scoket-e-shop.onrender.com/";
 
-// "http://localhost:3000";
-
 const socketId = socketIO(ENDPOINT, { transports: ["websocket"] });
 
 const DashboardMessages = () => {
