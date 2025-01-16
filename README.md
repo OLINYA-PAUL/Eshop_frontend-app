@@ -13,4 +13,4 @@ Follow this requirement and install the dependencies
 
 
 `
-npm start`
+npm run dev`
