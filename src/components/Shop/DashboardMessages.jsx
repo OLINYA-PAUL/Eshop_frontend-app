@@ -9,9 +9,10 @@ import styles from "../../styles/styles";
 import { TfiGallery } from "react-icons/tfi";
 import socketIO from "socket.io-client";
 import { format } from "timeago.js";
-const ENDPOINT = "http://localhost:3000";
+const ENDPOINT = "https://web-scoket-e-shop.onrender.com/";
 
-// "https://socket-ecommerce-tu68.onrender.com/";
+// "http://localhost:3000";
+
 const socketId = socketIO(ENDPOINT, { transports: ["websocket"] });
 
 const DashboardMessages = () => {
