@@ -53,7 +53,7 @@ const ProfileContent = ({ active }) => {
     const reader = new FileReader();
 
     reader.onload = () => {
-      if (reader.readyState === 2) {
+      if (reader.readyState === reader.DONE) {
         setAvatar(reader.result);
         axios
           .put(
@@ -771,7 +771,7 @@ const Address = () => {
 
       {user && user.addresses.length === 0 && (
         <h5 className="text-center pt-8 text-[18px]">
-          You not have any saved address!
+          You do not have any saved address!
         </h5>
       )}
     </div>

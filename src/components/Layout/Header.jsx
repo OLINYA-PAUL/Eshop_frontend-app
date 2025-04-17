@@ -150,7 +150,7 @@ const Header = ({ activeHeading }) => {
               >
                 <AiOutlineHeart size={30} color="rgb(255 255 255 / 83%)" />
                 <span className="absolute right-0 top-0 rounded-full bg-[#3bc177] w-4 h-4 top right p-0 m-0 text-white font-mono text-[12px] leading-tight text-center">
-                  {wishlist && wishlist.length}
+                  {wishlist && wishlist?.length}
                 </span>
               </div>
             </div>
