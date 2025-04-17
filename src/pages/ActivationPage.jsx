@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { server } from "../server";
+import { toast } from "react-toastify";
 
 const ActivationPage = () => {
   const { activation_token } = useParams();
@@ -20,12 +21,12 @@ const ActivationPage = () => {
           })
           .then((res) => {
             console.log(res);
+            toast.success("Please Login!");
+            navigate("/login");
           })
           .catch((err) => {
             setError(true);
           });
-
-        navigate("/login");
       };
       sendRequest();
     }
